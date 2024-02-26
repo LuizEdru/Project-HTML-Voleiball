@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family:"fontelogo";
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@font-face {
+    font-family:"fontegay";
+    src: url("../_fonts/computer-font.ttf")
+}
+body {
+    font-family: arial, sans-serif;
+    background-color: #dddddd;
+    color: rgba(0,0,0,1);
+     }
+
+a {
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 10px;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 950px;
+    top: 45px;
+}
+header#cabecalho h1 {
+    font-family: "fontelogo", sans-serif;
+    font-size: 30pt;
+    color: #2b2a2aa6;
+    text-shadow: 1px 1px 10px ;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #7c7c7c;
+    padding: 0px;
+    margin-top: 0px;
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+p {
+    text-align: justify;
+    text-indent: 30px;
+    font-family: arial;
+  }
+/*Formatacao de imagens com legendas*/
+
+figure.foto-legenda {
+    position: relative;
+    border: 4px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+width: 100%;
+height: 100%;
+}
+figure.foto-legenda figcaption {
+    text-align:center;
+    transition: opacity 1s;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    width:100%;
+    height:100%;
+    padding: 10;
+    box-sizing: border-box;
+}
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+h2.titulo-centro {
+    text-align: center;
+}
+
+/* formatacao menu */
+
+nav#menu {
+    display: block;
+
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 405px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+color: #000000;
+text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+section#corpo {
+    display: block;
+    width: 440px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 10px;
+}
+article#noticiaprincipal h2 {
+    font-size: 12pt;
+    color: #474747;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+.direita {
+    text-align: right;
+    font-size: 5pt;
+}
+header#cabecalho-artigo h1 {
+    font-family: 'fontelogo' sans-serif;
+    font-size: 22pt;
+    color: #494949;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-shadow: 1px 1px 1px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 13pt;
+    color: #525151;
+    background: none;
+    margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h4 {
+    font-size: 10pt;
+    color: #2b2a2aa9;
+    margin: 2px;
+    
+}
+table#tabelaspec caption.eunaosei{
+    margin-top: -100px;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+    vertical-align: top;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 29px;
+}
+
+table#tabelaspec caption {
+    color: rgba(0, 0, 0, 0.83);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+aside#lateral {
+    display: block;
+    width: 400px;
+    float: right;
+    padding-top: 50px;
+    background-color: #4747479d;
+    padding: 70px 24px 10px 15px;
+    margin-top: 13px;
+}
+
+aside#lateral h1 {
+    font-family: 'fontelogo';
+    font-size: 25pt;
+    color: #2b2a2aa6;
+    text-shadow: 1px 1px 3px;
+    margin-top: -35px;
+    margin-bottom: 50px;
+}
+
+aside#lateral h2 {
+    background-color: #474747;
+    font-size: 12pt;
+    color: #dddddd;
+    padding: 5px;
+    font-weight: 750;
+}
+div#treino {
+    width:440px;
+    height: 250px;
+    margin-bottom: 40px;
+    box-shadow: 3px 4px 3px black;
+    background-color: #000000;
+}
+
+video#videotreino{
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 300;
+    height: 250px;
+    margin-top: 20px;
+}
+
+div#globo {
+    width:400px;
+    height: 225px;
+    margin-bottom: 0px;
+    box-shadow: 3px 4px 3px black;
+    background-color: #000000;
+}
+
+video#novidadeesportes {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 300;
+    height: 225px;
+    margin-top: 20px;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
